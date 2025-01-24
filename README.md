@@ -37,13 +37,17 @@ DATABASE_URL=postgresql://postgres:your_password@localhost:5432/autodata
 ```
 
 ### 3. Database Setup
-```
 Access PostgreSQL
+```
 psql -U postgres
+```
 Create database
+```
 CREATE DATABASE autodata;
 \q
+```
 Initialize database
+```
 flask db upgrade
 ```
 
