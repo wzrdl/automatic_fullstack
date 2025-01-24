@@ -7,7 +7,7 @@ An AI prompt optimization tool that helps improve prompt effectiveness through i
 Before you begin, ensure you have the following installed:
 - Python 3.8+
 - Node.js 18+
-- PostgreSQL 14+
+- PostgreSQL 17+
 - Git
 
 ## Installation
@@ -15,7 +15,6 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 ```
 git clone https://github.com/wzrdl/automatic_fullstack.git
-
 ```
 cd automatic_fullstack
 
