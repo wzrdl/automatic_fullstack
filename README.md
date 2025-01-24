@@ -13,3 +13,6 @@ Before you begin, ensure you have the following installed:
 ## Installation
 
 ### 1. Clone the Repository
+```
+git clone https://github.com/wzrdl/automatic_fullstack.git
+cd automatic_fullstack
