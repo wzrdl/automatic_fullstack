@@ -16,32 +16,25 @@ Before you begin, ensure you have the following installed:
 ```
 git clone https://github.com/wzrdl/automatic_fullstack.git
 ```
+```
 cd automatic_fullstack
-
+```
 ### 2. Backend Setup
-
 Navigate to backend directory
 ```
 cd auto_backend
+```
 
-Create virtual environment
-```
-python -m venv venv
-```
-Activate virtual environment
-On Windows:
-venv\Scripts\activate
-On macOS/Linux:
-source venv/bin/activate
 Install dependencies
 ```
 pip install -r requirements.txt
+```
 
 Create .env file in auto_backend directory and add:
 ```
 OPENAI_API_KEY=your_openai_api_key
 DATABASE_URL=postgresql://postgres:your_password@localhost:5432/autodata
-
+```
 
 ### 3. Database Setup
 ```
@@ -52,34 +45,41 @@ CREATE DATABASE autodata;
 \q
 Initialize database
 flask db upgrade
-
+```
 
 ### 4. Frontend Setup
-```
-Navigate to frontend directory
-cd ../auto_frontend
-Install dependencies
-npm install
-Create .env.local file in auto_frontend directory and add:
-NEXT_PUBLIC_API_URL=http://localhost:5000/api
 
+Navigate to frontend directory
+```
+cd ../auto_frontend
+```
+Install dependencies
+```
+npm install
+```
+Create .env.local file in auto_frontend directory and add:
+```
+NEXT_PUBLIC_API_URL=http://localhost:5000/api
+```
 
 
 ## Running the Application
 
 ### 1. Start the Backend Server
-```
-In auto_backend directory (with virtual environment activated)
-flask run
 
+In auto_backend directory (with virtual environment activated)
+```
+flask run
+```
 
 The backend server will start at http://localhost:5000
 
 ### 2. Start the Frontend Development Server
-```
-In auto_frontend directory
-npm run dev
 
+In auto_frontend directory
+```
+npm run dev
+```
 
 The frontend will be available at http://localhost:3000
 
@@ -113,7 +113,7 @@ automatic_fullstack/
 ├── components/ # React components
 ├── lib/ # Utilities and API
 └── package.json # Node.js dependencies
-
+```
 
 ## Features
 
@@ -130,19 +130,19 @@ automatic_fullstack/
 ### Common Issues
 
 1. Database Connection Error
-```
+
 Check PostgreSQL service is running
 Verify database credentials in .env file
 Ensure database exists
 
 
 2. API Key Error
-```
+
 Verify OPENAI_API_KEY in .env file
 Check API key permissions and quota
 
 3. Frontend Connection Error
-```
+
 Ensure backend is running
 Check NEXT_PUBLIC_API_URL in .env.local
 Verify network connectivity
