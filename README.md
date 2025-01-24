@@ -15,14 +15,18 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 ```
 git clone https://github.com/wzrdl/automatic_fullstack.git
+
+```
 cd automatic_fullstack
 
 ### 2. Backend Setup
-```
+
 Navigate to backend directory
-cd auto_backend
 ```
+cd auto_backend
+
 Create virtual environment
+```
 python -m venv venv
 ```
 Activate virtual environment
