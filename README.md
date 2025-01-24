@@ -21,16 +21,21 @@ cd automatic_fullstack
 ```
 Navigate to backend directory
 cd auto_backend
+```
 Create virtual environment
 python -m venv venv
+```
 Activate virtual environment
 On Windows:
 venv\Scripts\activate
 On macOS/Linux:
 source venv/bin/activate
 Install dependencies
+```
 pip install -r requirements.txt
+
 Create .env file in auto_backend directory and add:
+```
 OPENAI_API_KEY=your_openai_api_key
 DATABASE_URL=postgresql://postgres:your_password@localhost:5432/autodata
 
